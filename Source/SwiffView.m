@@ -95,18 +95,6 @@
     [self _layoutMovieLayer];
 }
 
-
-- (void) willMoveToWindow:(UIWindow *)newWindow
-{
-    if (newWindow != [self window]) {
-        CGFloat scale = [newWindow contentScaleFactor];
-        if (scale < 1) scale = 1;
-        [self setContentScaleFactor:scale];
-        [[self layer] setContentsScale:scale];
-        [_layer setContentsScale:scale];
-    }
-}
-
 #endif
 
 
