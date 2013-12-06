@@ -607,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55955E0D147089F000BAB75E /* SwiffCore_iOS_Profile.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/include/libxml2",
@@ -631,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55C1B1EE14688E5B0010CB82 /* SwiffCore_iOS_Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/include/libxml2",
@@ -643,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55C1B1EF14688E5B0010CB82 /* SwiffCore_iOS_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/include/libxml2",
