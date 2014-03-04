@@ -123,6 +123,7 @@ void SwiffPlayheadWarnForInvalidGotoArguments()
     }
 
     if (isPlaying != play) {
+      [self willChangeValueForKey:@"playing"];
         [self invalidateTimers];
 
         if (play) {
@@ -153,7 +154,9 @@ void SwiffPlayheadWarnForInvalidGotoArguments()
         }
         
         needsUpdate = YES;
+      [self didChangeValueForKey:@"playing"];
     }
+
     
     if (needsUpdate) {
         [_delegate playheadDidUpdate:self step:NO];
