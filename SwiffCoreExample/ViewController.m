@@ -24,8 +24,8 @@
 	SwiffMovie* swfMovie = [[SwiffMovie alloc] initWithData:swfData];
 	_swf_view.movie = swfMovie;
 	_swf_view.delegate = self;
-	[_swf_view playhead].loopsMovie = YES;// ループするように
-	[[_swf_view playhead] play];
+	_swf_view.playhead.loopsMovie = YES;// ループするように
+	[_swf_view.playhead play];
 	
 	[self.view addSubview:_swf_view];
 

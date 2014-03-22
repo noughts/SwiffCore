@@ -311,7 +311,7 @@ void SwiffPlayheadWarnForInvalidGotoArguments()
         }
 
     // If frame is now nil, we hit the end of the movie
-    } else if (![self frame]) {
+    } else if (![self hasNextFrame]) {
         if (_loopsMovie) {
             _frameIndex = 0;
         } else {
@@ -340,6 +340,12 @@ void SwiffPlayheadWarnForInvalidGotoArguments()
     }
     
     return nil;
+}
+
+- (BOOL) hasNextFrame{
+	NSArray *frames = [_movie frames];
+	int nextFrameIndex = _frameIndex + 1;
+	return nextFrameIndex < frames.count;
 }
 
 
