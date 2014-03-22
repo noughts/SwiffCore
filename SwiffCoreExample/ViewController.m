@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SwiffMovie.h"
-#import "SwiffView.h"
-#import "SwiffPlayhead.h"
-
+#import "SwiffCore.h"
 
 @implementation ViewController{
 	__weak IBOutlet SwiffView* _swf_view;
@@ -26,14 +23,23 @@
 	NSData* swfData = [NSData dataWithContentsOfFile:resourcePath];
 	SwiffMovie* swfMovie = [[SwiffMovie alloc] initWithData:swfData];
 	_swf_view.movie = swfMovie;
+	_swf_view.delegate = self;
 	[_swf_view playhead].loopsMovie = YES;// ループするように
+	[[_swf_view playhead] play];
 	
 	[self.view addSubview:_swf_view];
 
 }
 
 -(IBAction)onPlayButtonTap:(id)sender{
-	[[_swf_view playhead] play];
+	[_swf_view.playhead gotoFrameWithIndex:1 play:YES];
+}
+
+
+- (void) swiffView:(SwiffView *)swiffView willUpdateCurrentFrame:(SwiffFrame *)frame{
+    for (SwiffPlacedObject *placedObject in [frame placedObjects]) {
+		placedObject.wantsLayer = YES;
+    }
 }
 
 
