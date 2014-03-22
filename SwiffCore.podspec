@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.source_files = 'SwiffCore/**/*.{h,m,xcconfig}'
   s.libraries = 'xml2', 'z'
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
-  # s.resource = "SwiffCore/SwiffCore.bundle"
+  s.resource = "SwiffCore/SwiffCore.bundle"
 end
