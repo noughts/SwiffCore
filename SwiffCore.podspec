@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://www.musictheory.net/"
   s.author       = { "musictheory" => "example@example.com" }
   s.source       = { :git => "https://github.com/noughts/SwiffCore", :tag => "#{s.version}" }
-  s.license      = { :type => 'BSD', :file => 'licence' }
+  s.license      = { :type => 'BSD', :file => 'license' }
 
   s.platform = :ios
   s.requires_arc = true
