@@ -55,7 +55,7 @@
 
 @property (nonatomic, weak) id<SwiffViewDelegate> delegate;
 
-@property (nonatomic, strong, readonly) SwiffMovie *movie;
+@property (nonatomic, strong) SwiffMovie *movie;
 @property (nonatomic, strong, readonly) SwiffPlayhead *playhead;
 
 @property (nonatomic, assign) BOOL drawsBackground;

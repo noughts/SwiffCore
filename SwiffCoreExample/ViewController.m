@@ -13,7 +13,7 @@
 
 
 @implementation ViewController{
-	SwiffView* _swf_view;
+	__weak IBOutlet SwiffView* _swf_view;
 }
 
 
@@ -25,7 +25,7 @@
 	NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"swf"];
 	NSData* swfData = [NSData dataWithContentsOfFile:resourcePath];
 	SwiffMovie* swfMovie = [[SwiffMovie alloc] initWithData:swfData];
-	_swf_view = [[SwiffView alloc] initWithFrame:swfMovie.stageRect movie:swfMovie];
+	_swf_view.movie = swfMovie;
 	[_swf_view playhead].loopsMovie = YES;// ループするように
 	
 	[self.view addSubview:_swf_view];

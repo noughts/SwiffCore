@@ -214,6 +214,15 @@
 #pragma mark -
 #pragma mark Accessors
 
+-(void)setMovie:(SwiffMovie *)movie{
+	_layer = [[SwiffLayer alloc] initWithMovie:movie];
+	[_layer setContentsScale:[[UIScreen mainScreen] scale]];
+	[[self layer] addSublayer:_layer];
+	[self _layoutMovieLayer];
+
+}
+
+
 - (void) setDelegate:(id<SwiffViewDelegate>)delegate
 {
     if (_delegate != delegate) {
