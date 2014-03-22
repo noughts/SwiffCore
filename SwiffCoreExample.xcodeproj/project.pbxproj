@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D09E5BA18DD68AC003670EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E5B918DD68AC003670EB /* Foundation.framework */; };
+		4D09E5BC18DD68AC003670EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E5BB18DD68AC003670EB /* CoreGraphics.framework */; };
+		4D09E5BE18DD68AC003670EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E5BD18DD68AC003670EB /* UIKit.framework */; };
+		4D09E5C418DD68AC003670EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5C218DD68AC003670EB /* InfoPlist.strings */; };
+		4D09E5C618DD68AC003670EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E5C518DD68AC003670EB /* main.m */; };
+		4D09E5CA18DD68AC003670EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E5C918DD68AC003670EB /* AppDelegate.m */; };
+		4D09E5CD18DD68AC003670EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5CB18DD68AC003670EB /* Main.storyboard */; };
+		4D09E5D018DD68AC003670EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E5CF18DD68AC003670EB /* ViewController.m */; };
+		4D09E5D218DD68AD003670EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5D118DD68AC003670EB /* Images.xcassets */; };
+		4D09E5D918DD68AD003670EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E5D818DD68AD003670EB /* XCTest.framework */; };
+		4D09E5DA18DD68AD003670EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E5B918DD68AC003670EB /* Foundation.framework */; };
+		4D09E5DB18DD68AD003670EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E5BD18DD68AC003670EB /* UIKit.framework */; };
+		4D09E5E318DD68AD003670EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5E118DD68AD003670EB /* InfoPlist.strings */; };
+		4D09E5E518DD68AD003670EB /* SwiffCoreExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E5E418DD68AD003670EB /* SwiffCoreExampleTests.m */; };
+		4D09E5F218DD6A3F003670EB /* test.swf in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5F118DD6A3F003670EB /* test.swf */; };
+		4D09E64718DD6B62003670EB /* SwiffCore_iOS_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5F518DD6B62003670EB /* SwiffCore_iOS_Debug.xcconfig */; };
+		4D09E64818DD6B62003670EB /* SwiffCore_iOS_Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5F618DD6B62003670EB /* SwiffCore_iOS_Profile.xcconfig */; };
+		4D09E64918DD6B62003670EB /* SwiffCore_iOS_Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5F718DD6B62003670EB /* SwiffCore_iOS_Release.xcconfig */; };
+		4D09E64A18DD6B62003670EB /* SwiffCore_Mac_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5F818DD6B62003670EB /* SwiffCore_Mac_Debug.xcconfig */; };
+		4D09E64B18DD6B62003670EB /* SwiffCore_Mac_Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5F918DD6B62003670EB /* SwiffCore_Mac_Profile.xcconfig */; };
+		4D09E64C18DD6B62003670EB /* SwiffCore_Mac_Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5FA18DD6B62003670EB /* SwiffCore_Mac_Release.xcconfig */; };
+		4D09E64D18DD6B62003670EB /* SwiffCore_Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5FB18DD6B62003670EB /* SwiffCore_Base.xcconfig */; };
+		4D09E64E18DD6B62003670EB /* SwiffCore_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5FC18DD6B62003670EB /* SwiffCore_Debug.xcconfig */; };
+		4D09E64F18DD6B62003670EB /* SwiffCore_iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5FD18DD6B62003670EB /* SwiffCore_iOS.xcconfig */; };
+		4D09E65018DD6B62003670EB /* SwiffCore_Mac.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5FE18DD6B62003670EB /* SwiffCore_Mac.xcconfig */; };
+		4D09E65118DD6B62003670EB /* SwiffCore_Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E5FF18DD6B62003670EB /* SwiffCore_Profile.xcconfig */; };
+		4D09E65218DD6B62003670EB /* SwiffCore_Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D09E60018DD6B62003670EB /* SwiffCore_Release.xcconfig */; };
+		4D09E65318DD6B62003670EB /* SwiffBitmapDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E60318DD6B62003670EB /* SwiffBitmapDefinition.m */; };
+		4D09E65418DD6B62003670EB /* SwiffDynamicTextAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E60718DD6B62003670EB /* SwiffDynamicTextAttributes.m */; };
+		4D09E65518DD6B62003670EB /* SwiffDynamicTextDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E60918DD6B62003670EB /* SwiffDynamicTextDefinition.m */; };
+		4D09E65618DD6B62003670EB /* SwiffFillStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E60B18DD6B62003670EB /* SwiffFillStyle.m */; };
+		4D09E65718DD6B62003670EB /* SwiffFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E60D18DD6B62003670EB /* SwiffFilter.m */; };
+		4D09E65818DD6B62003670EB /* SwiffFontDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E60F18DD6B62003670EB /* SwiffFontDefinition.m */; };
+		4D09E65918DD6B62003670EB /* SwiffFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E61118DD6B62003670EB /* SwiffFrame.m */; };
+		4D09E65A18DD6B62003670EB /* SwiffGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E61318DD6B62003670EB /* SwiffGradient.m */; };
+		4D09E65B18DD6B62003670EB /* SwiffHTMLToCoreTextConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E61518DD6B62003670EB /* SwiffHTMLToCoreTextConverter.m */; };
+		4D09E65C18DD6B62003670EB /* SwiffLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E61818DD6B62003670EB /* SwiffLayer.m */; };
+		4D09E65D18DD6B62003670EB /* SwiffLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E61A18DD6B62003670EB /* SwiffLineStyle.m */; };
+		4D09E65E18DD6B62003670EB /* SwiffMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E61C18DD6B62003670EB /* SwiffMovie.m */; };
+		4D09E65F18DD6B62003670EB /* SwiffParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E61E18DD6B62003670EB /* SwiffParser.m */; };
+		4D09E66018DD6B62003670EB /* SwiffPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62018DD6B62003670EB /* SwiffPath.m */; };
+		4D09E66118DD6B62003670EB /* SwiffPlacedDynamicText.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62218DD6B62003670EB /* SwiffPlacedDynamicText.m */; };
+		4D09E66218DD6B62003670EB /* SwiffPlacedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62418DD6B62003670EB /* SwiffPlacedObject.m */; };
+		4D09E66318DD6B62003670EB /* SwiffPlayhead.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62618DD6B62003670EB /* SwiffPlayhead.m */; };
+		4D09E66418DD6B62003670EB /* SwiffRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62818DD6B62003670EB /* SwiffRenderer.m */; };
+		4D09E66518DD6B62003670EB /* SwiffScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62A18DD6B62003670EB /* SwiffScene.m */; };
+		4D09E66618DD6B62003670EB /* SwiffSceneAndFrameLabelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62C18DD6B62003670EB /* SwiffSceneAndFrameLabelData.m */; };
+		4D09E66718DD6B62003670EB /* SwiffShapeDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E62E18DD6B62003670EB /* SwiffShapeDefinition.m */; };
+		4D09E66818DD6B62003670EB /* SwiffSoundDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63018DD6B62003670EB /* SwiffSoundDefinition.m */; };
+		4D09E66918DD6B62003670EB /* SwiffSoundEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63218DD6B62003670EB /* SwiffSoundEvent.m */; };
+		4D09E66A18DD6B62003670EB /* SwiffSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63418DD6B62003670EB /* SwiffSoundPlayer.m */; };
+		4D09E66B18DD6B62003670EB /* SwiffSoundStreamBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63618DD6B62003670EB /* SwiffSoundStreamBlock.m */; };
+		4D09E66C18DD6B62003670EB /* SwiffSparseArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63818DD6B62003670EB /* SwiffSparseArray.m */; };
+		4D09E66D18DD6B62003670EB /* SwiffSpriteDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63A18DD6B62003670EB /* SwiffSpriteDefinition.m */; };
+		4D09E66E18DD6B62003670EB /* SwiffStaticTextDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63C18DD6B62003670EB /* SwiffStaticTextDefinition.m */; };
+		4D09E66F18DD6B62003670EB /* SwiffStaticTextRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E63E18DD6B62003670EB /* SwiffStaticTextRecord.m */; };
+		4D09E67018DD6B62003670EB /* SwiffTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E64018DD6B62003670EB /* SwiffTypes.m */; };
+		4D09E67118DD6B62003670EB /* SwiffUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E64218DD6B62003670EB /* SwiffUtils.m */; };
+		4D09E67218DD6B62003670EB /* SwiffView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E64418DD6B62003670EB /* SwiffView.m */; };
+		4D09E67318DD6B62003670EB /* SwiffWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D09E64618DD6B62003670EB /* SwiffWriter.m */; };
+		4D09E67818DD7043003670EB /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E67618DD6CB1003670EB /* libxml2.dylib */; };
+		4D09E67A18DD7050003670EB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09E67918DD7050003670EB /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D09E5DC18DD68AD003670EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D09E5AE18DD68AC003670EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D09E5B518DD68AC003670EB;
+			remoteInfo = SwiffCoreExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D09E5B618DD68AC003670EB /* SwiffCoreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiffCoreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D09E5B918DD68AC003670EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D09E5BB18DD68AC003670EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4D09E5BD18DD68AC003670EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4D09E5C118DD68AC003670EB /* SwiffCoreExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwiffCoreExample-Info.plist"; sourceTree = "<group>"; };
+		4D09E5C318DD68AC003670EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D09E5C518DD68AC003670EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D09E5C718DD68AC003670EB /* SwiffCoreExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiffCoreExample-Prefix.pch"; sourceTree = "<group>"; };
+		4D09E5C818DD68AC003670EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D09E5C918DD68AC003670EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D09E5CC18DD68AC003670EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D09E5CE18DD68AC003670EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4D09E5CF18DD68AC003670EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4D09E5D118DD68AC003670EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4D09E5D718DD68AD003670EB /* SwiffCoreExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiffCoreExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D09E5D818DD68AD003670EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4D09E5E018DD68AD003670EB /* SwiffCoreExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwiffCoreExampleTests-Info.plist"; sourceTree = "<group>"; };
+		4D09E5E218DD68AD003670EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D09E5E418DD68AD003670EB /* SwiffCoreExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiffCoreExampleTests.m; sourceTree = "<group>"; };
+		4D09E5F118DD6A3F003670EB /* test.swf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.swf; sourceTree = "<group>"; };
+		4D09E5F518DD6B62003670EB /* SwiffCore_iOS_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_iOS_Debug.xcconfig; sourceTree = "<group>"; };
+		4D09E5F618DD6B62003670EB /* SwiffCore_iOS_Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_iOS_Profile.xcconfig; sourceTree = "<group>"; };
+		4D09E5F718DD6B62003670EB /* SwiffCore_iOS_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_iOS_Release.xcconfig; sourceTree = "<group>"; };
+		4D09E5F818DD6B62003670EB /* SwiffCore_Mac_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Mac_Debug.xcconfig; sourceTree = "<group>"; };
+		4D09E5F918DD6B62003670EB /* SwiffCore_Mac_Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Mac_Profile.xcconfig; sourceTree = "<group>"; };
+		4D09E5FA18DD6B62003670EB /* SwiffCore_Mac_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Mac_Release.xcconfig; sourceTree = "<group>"; };
+		4D09E5FB18DD6B62003670EB /* SwiffCore_Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Base.xcconfig; sourceTree = "<group>"; };
+		4D09E5FC18DD6B62003670EB /* SwiffCore_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Debug.xcconfig; sourceTree = "<group>"; };
+		4D09E5FD18DD6B62003670EB /* SwiffCore_iOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_iOS.xcconfig; sourceTree = "<group>"; };
+		4D09E5FE18DD6B62003670EB /* SwiffCore_Mac.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Mac.xcconfig; sourceTree = "<group>"; };
+		4D09E5FF18DD6B62003670EB /* SwiffCore_Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Profile.xcconfig; sourceTree = "<group>"; };
+		4D09E60018DD6B62003670EB /* SwiffCore_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SwiffCore_Release.xcconfig; sourceTree = "<group>"; };
+		4D09E60218DD6B62003670EB /* SwiffBitmapDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffBitmapDefinition.h; sourceTree = "<group>"; };
+		4D09E60318DD6B62003670EB /* SwiffBitmapDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffBitmapDefinition.m; sourceTree = "<group>"; };
+		4D09E60418DD6B62003670EB /* SwiffCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffCore.h; sourceTree = "<group>"; };
+		4D09E60518DD6B62003670EB /* SwiffDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffDefinition.h; sourceTree = "<group>"; };
+		4D09E60618DD6B62003670EB /* SwiffDynamicTextAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffDynamicTextAttributes.h; sourceTree = "<group>"; };
+		4D09E60718DD6B62003670EB /* SwiffDynamicTextAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffDynamicTextAttributes.m; sourceTree = "<group>"; };
+		4D09E60818DD6B62003670EB /* SwiffDynamicTextDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffDynamicTextDefinition.h; sourceTree = "<group>"; };
+		4D09E60918DD6B62003670EB /* SwiffDynamicTextDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffDynamicTextDefinition.m; sourceTree = "<group>"; };
+		4D09E60A18DD6B62003670EB /* SwiffFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffFillStyle.h; sourceTree = "<group>"; };
+		4D09E60B18DD6B62003670EB /* SwiffFillStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffFillStyle.m; sourceTree = "<group>"; };
+		4D09E60C18DD6B62003670EB /* SwiffFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffFilter.h; sourceTree = "<group>"; };
+		4D09E60D18DD6B62003670EB /* SwiffFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffFilter.m; sourceTree = "<group>"; };
+		4D09E60E18DD6B62003670EB /* SwiffFontDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffFontDefinition.h; sourceTree = "<group>"; };
+		4D09E60F18DD6B62003670EB /* SwiffFontDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffFontDefinition.m; sourceTree = "<group>"; };
+		4D09E61018DD6B62003670EB /* SwiffFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffFrame.h; sourceTree = "<group>"; };
+		4D09E61118DD6B62003670EB /* SwiffFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffFrame.m; sourceTree = "<group>"; };
+		4D09E61218DD6B62003670EB /* SwiffGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffGradient.h; sourceTree = "<group>"; };
+		4D09E61318DD6B62003670EB /* SwiffGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffGradient.m; sourceTree = "<group>"; };
+		4D09E61418DD6B62003670EB /* SwiffHTMLToCoreTextConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffHTMLToCoreTextConverter.h; sourceTree = "<group>"; };
+		4D09E61518DD6B62003670EB /* SwiffHTMLToCoreTextConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffHTMLToCoreTextConverter.m; sourceTree = "<group>"; };
+		4D09E61618DD6B62003670EB /* SwiffImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffImport.h; sourceTree = "<group>"; };
+		4D09E61718DD6B62003670EB /* SwiffLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffLayer.h; sourceTree = "<group>"; };
+		4D09E61818DD6B62003670EB /* SwiffLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffLayer.m; sourceTree = "<group>"; };
+		4D09E61918DD6B62003670EB /* SwiffLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffLineStyle.h; sourceTree = "<group>"; };
+		4D09E61A18DD6B62003670EB /* SwiffLineStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffLineStyle.m; sourceTree = "<group>"; };
+		4D09E61B18DD6B62003670EB /* SwiffMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffMovie.h; sourceTree = "<group>"; };
+		4D09E61C18DD6B62003670EB /* SwiffMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffMovie.m; sourceTree = "<group>"; };
+		4D09E61D18DD6B62003670EB /* SwiffParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffParser.h; sourceTree = "<group>"; };
+		4D09E61E18DD6B62003670EB /* SwiffParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffParser.m; sourceTree = "<group>"; };
+		4D09E61F18DD6B62003670EB /* SwiffPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffPath.h; sourceTree = "<group>"; };
+		4D09E62018DD6B62003670EB /* SwiffPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffPath.m; sourceTree = "<group>"; };
+		4D09E62118DD6B62003670EB /* SwiffPlacedDynamicText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffPlacedDynamicText.h; sourceTree = "<group>"; };
+		4D09E62218DD6B62003670EB /* SwiffPlacedDynamicText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffPlacedDynamicText.m; sourceTree = "<group>"; };
+		4D09E62318DD6B62003670EB /* SwiffPlacedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffPlacedObject.h; sourceTree = "<group>"; };
+		4D09E62418DD6B62003670EB /* SwiffPlacedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffPlacedObject.m; sourceTree = "<group>"; };
+		4D09E62518DD6B62003670EB /* SwiffPlayhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffPlayhead.h; sourceTree = "<group>"; };
+		4D09E62618DD6B62003670EB /* SwiffPlayhead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffPlayhead.m; sourceTree = "<group>"; };
+		4D09E62718DD6B62003670EB /* SwiffRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffRenderer.h; sourceTree = "<group>"; };
+		4D09E62818DD6B62003670EB /* SwiffRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffRenderer.m; sourceTree = "<group>"; };
+		4D09E62918DD6B62003670EB /* SwiffScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffScene.h; sourceTree = "<group>"; };
+		4D09E62A18DD6B62003670EB /* SwiffScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffScene.m; sourceTree = "<group>"; };
+		4D09E62B18DD6B62003670EB /* SwiffSceneAndFrameLabelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffSceneAndFrameLabelData.h; sourceTree = "<group>"; };
+		4D09E62C18DD6B62003670EB /* SwiffSceneAndFrameLabelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffSceneAndFrameLabelData.m; sourceTree = "<group>"; };
+		4D09E62D18DD6B62003670EB /* SwiffShapeDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffShapeDefinition.h; sourceTree = "<group>"; };
+		4D09E62E18DD6B62003670EB /* SwiffShapeDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffShapeDefinition.m; sourceTree = "<group>"; };
+		4D09E62F18DD6B62003670EB /* SwiffSoundDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffSoundDefinition.h; sourceTree = "<group>"; };
+		4D09E63018DD6B62003670EB /* SwiffSoundDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffSoundDefinition.m; sourceTree = "<group>"; };
+		4D09E63118DD6B62003670EB /* SwiffSoundEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffSoundEvent.h; sourceTree = "<group>"; };
+		4D09E63218DD6B62003670EB /* SwiffSoundEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffSoundEvent.m; sourceTree = "<group>"; };
+		4D09E63318DD6B62003670EB /* SwiffSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffSoundPlayer.h; sourceTree = "<group>"; };
+		4D09E63418DD6B62003670EB /* SwiffSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffSoundPlayer.m; sourceTree = "<group>"; };
+		4D09E63518DD6B62003670EB /* SwiffSoundStreamBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffSoundStreamBlock.h; sourceTree = "<group>"; };
+		4D09E63618DD6B62003670EB /* SwiffSoundStreamBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffSoundStreamBlock.m; sourceTree = "<group>"; };
+		4D09E63718DD6B62003670EB /* SwiffSparseArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffSparseArray.h; sourceTree = "<group>"; };
+		4D09E63818DD6B62003670EB /* SwiffSparseArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffSparseArray.m; sourceTree = "<group>"; };
+		4D09E63918DD6B62003670EB /* SwiffSpriteDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffSpriteDefinition.h; sourceTree = "<group>"; };
+		4D09E63A18DD6B62003670EB /* SwiffSpriteDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffSpriteDefinition.m; sourceTree = "<group>"; };
+		4D09E63B18DD6B62003670EB /* SwiffStaticTextDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffStaticTextDefinition.h; sourceTree = "<group>"; };
+		4D09E63C18DD6B62003670EB /* SwiffStaticTextDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffStaticTextDefinition.m; sourceTree = "<group>"; };
+		4D09E63D18DD6B62003670EB /* SwiffStaticTextRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffStaticTextRecord.h; sourceTree = "<group>"; };
+		4D09E63E18DD6B62003670EB /* SwiffStaticTextRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffStaticTextRecord.m; sourceTree = "<group>"; };
+		4D09E63F18DD6B62003670EB /* SwiffTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffTypes.h; sourceTree = "<group>"; };
+		4D09E64018DD6B62003670EB /* SwiffTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffTypes.m; sourceTree = "<group>"; };
+		4D09E64118DD6B62003670EB /* SwiffUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffUtils.h; sourceTree = "<group>"; };
+		4D09E64218DD6B62003670EB /* SwiffUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffUtils.m; sourceTree = "<group>"; };
+		4D09E64318DD6B62003670EB /* SwiffView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffView.h; sourceTree = "<group>"; };
+		4D09E64418DD6B62003670EB /* SwiffView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffView.m; sourceTree = "<group>"; };
+		4D09E64518DD6B62003670EB /* SwiffWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiffWriter.h; sourceTree = "<group>"; };
+		4D09E64618DD6B62003670EB /* SwiffWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiffWriter.m; sourceTree = "<group>"; };
+		4D09E67418DD6C98003670EB /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		4D09E67618DD6CB1003670EB /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		4D09E67918DD7050003670EB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D09E5B318DD68AC003670EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09E67A18DD7050003670EB /* libz.dylib in Frameworks */,
+				4D09E67818DD7043003670EB /* libxml2.dylib in Frameworks */,
+				4D09E5BC18DD68AC003670EB /* CoreGraphics.framework in Frameworks */,
+				4D09E5BE18DD68AC003670EB /* UIKit.framework in Frameworks */,
+				4D09E5BA18DD68AC003670EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09E5D418DD68AD003670EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09E5D918DD68AD003670EB /* XCTest.framework in Frameworks */,
+				4D09E5DB18DD68AD003670EB /* UIKit.framework in Frameworks */,
+				4D09E5DA18DD68AD003670EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D09E5AD18DD68AC003670EB = {
+			isa = PBXGroup;
+			children = (
+				4D09E5EE18DD68E5003670EB /* SwiffCore */,
+				4D09E5BF18DD68AC003670EB /* SwiffCoreExample */,
+				4D09E5DE18DD68AD003670EB /* SwiffCoreExampleTests */,
+				4D09E5B818DD68AC003670EB /* Frameworks */,
+				4D09E5B718DD68AC003670EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D09E5B718DD68AC003670EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5B618DD68AC003670EB /* SwiffCoreExample.app */,
+				4D09E5D718DD68AD003670EB /* SwiffCoreExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D09E5B818DD68AC003670EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E67918DD7050003670EB /* libz.dylib */,
+				4D09E67618DD6CB1003670EB /* libxml2.dylib */,
+				4D09E67418DD6C98003670EB /* libxml2.2.dylib */,
+				4D09E5B918DD68AC003670EB /* Foundation.framework */,
+				4D09E5BB18DD68AC003670EB /* CoreGraphics.framework */,
+				4D09E5BD18DD68AC003670EB /* UIKit.framework */,
+				4D09E5D818DD68AD003670EB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D09E5BF18DD68AC003670EB /* SwiffCoreExample */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5F118DD6A3F003670EB /* test.swf */,
+				4D09E5C818DD68AC003670EB /* AppDelegate.h */,
+				4D09E5C918DD68AC003670EB /* AppDelegate.m */,
+				4D09E5CB18DD68AC003670EB /* Main.storyboard */,
+				4D09E5CE18DD68AC003670EB /* ViewController.h */,
+				4D09E5CF18DD68AC003670EB /* ViewController.m */,
+				4D09E5D118DD68AC003670EB /* Images.xcassets */,
+				4D09E5C018DD68AC003670EB /* Supporting Files */,
+			);
+			path = SwiffCoreExample;
+			sourceTree = "<group>";
+		};
+		4D09E5C018DD68AC003670EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5C118DD68AC003670EB /* SwiffCoreExample-Info.plist */,
+				4D09E5C218DD68AC003670EB /* InfoPlist.strings */,
+				4D09E5C518DD68AC003670EB /* main.m */,
+				4D09E5C718DD68AC003670EB /* SwiffCoreExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D09E5DE18DD68AD003670EB /* SwiffCoreExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5E418DD68AD003670EB /* SwiffCoreExampleTests.m */,
+				4D09E5DF18DD68AD003670EB /* Supporting Files */,
+			);
+			path = SwiffCoreExampleTests;
+			sourceTree = "<group>";
+		};
+		4D09E5DF18DD68AD003670EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5E018DD68AD003670EB /* SwiffCoreExampleTests-Info.plist */,
+				4D09E5E118DD68AD003670EB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D09E5EE18DD68E5003670EB /* SwiffCore */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5F318DD6B62003670EB /* Config */,
+				4D09E60118DD6B62003670EB /* Source */,
+			);
+			path = SwiffCore;
+			sourceTree = "<group>";
+		};
+		4D09E5F318DD6B62003670EB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5F418DD6B62003670EB /* Combined */,
+				4D09E5FB18DD6B62003670EB /* SwiffCore_Base.xcconfig */,
+				4D09E5FC18DD6B62003670EB /* SwiffCore_Debug.xcconfig */,
+				4D09E5FD18DD6B62003670EB /* SwiffCore_iOS.xcconfig */,
+				4D09E5FE18DD6B62003670EB /* SwiffCore_Mac.xcconfig */,
+				4D09E5FF18DD6B62003670EB /* SwiffCore_Profile.xcconfig */,
+				4D09E60018DD6B62003670EB /* SwiffCore_Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4D09E5F418DD6B62003670EB /* Combined */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E5F518DD6B62003670EB /* SwiffCore_iOS_Debug.xcconfig */,
+				4D09E5F618DD6B62003670EB /* SwiffCore_iOS_Profile.xcconfig */,
+				4D09E5F718DD6B62003670EB /* SwiffCore_iOS_Release.xcconfig */,
+				4D09E5F818DD6B62003670EB /* SwiffCore_Mac_Debug.xcconfig */,
+				4D09E5F918DD6B62003670EB /* SwiffCore_Mac_Profile.xcconfig */,
+				4D09E5FA18DD6B62003670EB /* SwiffCore_Mac_Release.xcconfig */,
+			);
+			path = Combined;
+			sourceTree = "<group>";
+		};
+		4D09E60118DD6B62003670EB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4D09E60218DD6B62003670EB /* SwiffBitmapDefinition.h */,
+				4D09E60318DD6B62003670EB /* SwiffBitmapDefinition.m */,
+				4D09E60418DD6B62003670EB /* SwiffCore.h */,
+				4D09E60518DD6B62003670EB /* SwiffDefinition.h */,
+				4D09E60618DD6B62003670EB /* SwiffDynamicTextAttributes.h */,
+				4D09E60718DD6B62003670EB /* SwiffDynamicTextAttributes.m */,
+				4D09E60818DD6B62003670EB /* SwiffDynamicTextDefinition.h */,
+				4D09E60918DD6B62003670EB /* SwiffDynamicTextDefinition.m */,
+				4D09E60A18DD6B62003670EB /* SwiffFillStyle.h */,
+				4D09E60B18DD6B62003670EB /* SwiffFillStyle.m */,
+				4D09E60C18DD6B62003670EB /* SwiffFilter.h */,
+				4D09E60D18DD6B62003670EB /* SwiffFilter.m */,
+				4D09E60E18DD6B62003670EB /* SwiffFontDefinition.h */,
+				4D09E60F18DD6B62003670EB /* SwiffFontDefinition.m */,
+				4D09E61018DD6B62003670EB /* SwiffFrame.h */,
+				4D09E61118DD6B62003670EB /* SwiffFrame.m */,
+				4D09E61218DD6B62003670EB /* SwiffGradient.h */,
+				4D09E61318DD6B62003670EB /* SwiffGradient.m */,
+				4D09E61418DD6B62003670EB /* SwiffHTMLToCoreTextConverter.h */,
+				4D09E61518DD6B62003670EB /* SwiffHTMLToCoreTextConverter.m */,
+				4D09E61618DD6B62003670EB /* SwiffImport.h */,
+				4D09E61718DD6B62003670EB /* SwiffLayer.h */,
+				4D09E61818DD6B62003670EB /* SwiffLayer.m */,
+				4D09E61918DD6B62003670EB /* SwiffLineStyle.h */,
+				4D09E61A18DD6B62003670EB /* SwiffLineStyle.m */,
+				4D09E61B18DD6B62003670EB /* SwiffMovie.h */,
+				4D09E61C18DD6B62003670EB /* SwiffMovie.m */,
+				4D09E61D18DD6B62003670EB /* SwiffParser.h */,
+				4D09E61E18DD6B62003670EB /* SwiffParser.m */,
+				4D09E61F18DD6B62003670EB /* SwiffPath.h */,
+				4D09E62018DD6B62003670EB /* SwiffPath.m */,
+				4D09E62118DD6B62003670EB /* SwiffPlacedDynamicText.h */,
+				4D09E62218DD6B62003670EB /* SwiffPlacedDynamicText.m */,
+				4D09E62318DD6B62003670EB /* SwiffPlacedObject.h */,
+				4D09E62418DD6B62003670EB /* SwiffPlacedObject.m */,
+				4D09E62518DD6B62003670EB /* SwiffPlayhead.h */,
+				4D09E62618DD6B62003670EB /* SwiffPlayhead.m */,
+				4D09E62718DD6B62003670EB /* SwiffRenderer.h */,
+				4D09E62818DD6B62003670EB /* SwiffRenderer.m */,
+				4D09E62918DD6B62003670EB /* SwiffScene.h */,
+				4D09E62A18DD6B62003670EB /* SwiffScene.m */,
+				4D09E62B18DD6B62003670EB /* SwiffSceneAndFrameLabelData.h */,
+				4D09E62C18DD6B62003670EB /* SwiffSceneAndFrameLabelData.m */,
+				4D09E62D18DD6B62003670EB /* SwiffShapeDefinition.h */,
+				4D09E62E18DD6B62003670EB /* SwiffShapeDefinition.m */,
+				4D09E62F18DD6B62003670EB /* SwiffSoundDefinition.h */,
+				4D09E63018DD6B62003670EB /* SwiffSoundDefinition.m */,
+				4D09E63118DD6B62003670EB /* SwiffSoundEvent.h */,
+				4D09E63218DD6B62003670EB /* SwiffSoundEvent.m */,
+				4D09E63318DD6B62003670EB /* SwiffSoundPlayer.h */,
+				4D09E63418DD6B62003670EB /* SwiffSoundPlayer.m */,
+				4D09E63518DD6B62003670EB /* SwiffSoundStreamBlock.h */,
+				4D09E63618DD6B62003670EB /* SwiffSoundStreamBlock.m */,
+				4D09E63718DD6B62003670EB /* SwiffSparseArray.h */,
+				4D09E63818DD6B62003670EB /* SwiffSparseArray.m */,
+				4D09E63918DD6B62003670EB /* SwiffSpriteDefinition.h */,
+				4D09E63A18DD6B62003670EB /* SwiffSpriteDefinition.m */,
+				4D09E63B18DD6B62003670EB /* SwiffStaticTextDefinition.h */,
+				4D09E63C18DD6B62003670EB /* SwiffStaticTextDefinition.m */,
+				4D09E63D18DD6B62003670EB /* SwiffStaticTextRecord.h */,
+				4D09E63E18DD6B62003670EB /* SwiffStaticTextRecord.m */,
+				4D09E63F18DD6B62003670EB /* SwiffTypes.h */,
+				4D09E64018DD6B62003670EB /* SwiffTypes.m */,
+				4D09E64118DD6B62003670EB /* SwiffUtils.h */,
+				4D09E64218DD6B62003670EB /* SwiffUtils.m */,
+				4D09E64318DD6B62003670EB /* SwiffView.h */,
+				4D09E64418DD6B62003670EB /* SwiffView.m */,
+				4D09E64518DD6B62003670EB /* SwiffWriter.h */,
+				4D09E64618DD6B62003670EB /* SwiffWriter.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D09E5B518DD68AC003670EB /* SwiffCoreExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D09E5E818DD68AD003670EB /* Build configuration list for PBXNativeTarget "SwiffCoreExample" */;
+			buildPhases = (
+				4D09E5B218DD68AC003670EB /* Sources */,
+				4D09E5B318DD68AC003670EB /* Frameworks */,
+				4D09E5B418DD68AC003670EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiffCoreExample;
+			productName = SwiffCoreExample;
+			productReference = 4D09E5B618DD68AC003670EB /* SwiffCoreExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D09E5D618DD68AD003670EB /* SwiffCoreExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D09E5EB18DD68AD003670EB /* Build configuration list for PBXNativeTarget "SwiffCoreExampleTests" */;
+			buildPhases = (
+				4D09E5D318DD68AD003670EB /* Sources */,
+				4D09E5D418DD68AD003670EB /* Frameworks */,
+				4D09E5D518DD68AD003670EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D09E5DD18DD68AD003670EB /* PBXTargetDependency */,
+			);
+			name = SwiffCoreExampleTests;
+			productName = SwiffCoreExampleTests;
+			productReference = 4D09E5D718DD68AD003670EB /* SwiffCoreExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D09E5AE18DD68AC003670EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = noughts;
+				TargetAttributes = {
+					4D09E5D618DD68AD003670EB = {
+						TestTargetID = 4D09E5B518DD68AC003670EB;
+					};
+				};
+			};
+			buildConfigurationList = 4D09E5B118DD68AC003670EB /* Build configuration list for PBXProject "SwiffCoreExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D09E5AD18DD68AC003670EB;
+			productRefGroup = 4D09E5B718DD68AC003670EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D09E5B518DD68AC003670EB /* SwiffCoreExample */,
+				4D09E5D618DD68AD003670EB /* SwiffCoreExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D09E5B418DD68AC003670EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09E65118DD6B62003670EB /* SwiffCore_Profile.xcconfig in Resources */,
+				4D09E65218DD6B62003670EB /* SwiffCore_Release.xcconfig in Resources */,
+				4D09E64B18DD6B62003670EB /* SwiffCore_Mac_Profile.xcconfig in Resources */,
+				4D09E5D218DD68AD003670EB /* Images.xcassets in Resources */,
+				4D09E64A18DD6B62003670EB /* SwiffCore_Mac_Debug.xcconfig in Resources */,
+				4D09E64D18DD6B62003670EB /* SwiffCore_Base.xcconfig in Resources */,
+				4D09E64C18DD6B62003670EB /* SwiffCore_Mac_Release.xcconfig in Resources */,
+				4D09E64F18DD6B62003670EB /* SwiffCore_iOS.xcconfig in Resources */,
+				4D09E5C418DD68AC003670EB /* InfoPlist.strings in Resources */,
+				4D09E5F218DD6A3F003670EB /* test.swf in Resources */,
+				4D09E64818DD6B62003670EB /* SwiffCore_iOS_Profile.xcconfig in Resources */,
+				4D09E5CD18DD68AC003670EB /* Main.storyboard in Resources */,
+				4D09E64E18DD6B62003670EB /* SwiffCore_Debug.xcconfig in Resources */,
+				4D09E64918DD6B62003670EB /* SwiffCore_iOS_Release.xcconfig in Resources */,
+				4D09E64718DD6B62003670EB /* SwiffCore_iOS_Debug.xcconfig in Resources */,
+				4D09E65018DD6B62003670EB /* SwiffCore_Mac.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09E5D518DD68AD003670EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09E5E318DD68AD003670EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D09E5B218DD68AC003670EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09E66918DD6B62003670EB /* SwiffSoundEvent.m in Sources */,
+				4D09E66418DD6B62003670EB /* SwiffRenderer.m in Sources */,
+				4D09E65A18DD6B62003670EB /* SwiffGradient.m in Sources */,
+				4D09E5D018DD68AC003670EB /* ViewController.m in Sources */,
+				4D09E65C18DD6B62003670EB /* SwiffLayer.m in Sources */,
+				4D09E66518DD6B62003670EB /* SwiffScene.m in Sources */,
+				4D09E65B18DD6B62003670EB /* SwiffHTMLToCoreTextConverter.m in Sources */,
+				4D09E65F18DD6B62003670EB /* SwiffParser.m in Sources */,
+				4D09E65818DD6B62003670EB /* SwiffFontDefinition.m in Sources */,
+				4D09E66B18DD6B62003670EB /* SwiffSoundStreamBlock.m in Sources */,
+				4D09E65418DD6B62003670EB /* SwiffDynamicTextAttributes.m in Sources */,
+				4D09E5CA18DD68AC003670EB /* AppDelegate.m in Sources */,
+				4D09E67318DD6B62003670EB /* SwiffWriter.m in Sources */,
+				4D09E66718DD6B62003670EB /* SwiffShapeDefinition.m in Sources */,
+				4D09E65518DD6B62003670EB /* SwiffDynamicTextDefinition.m in Sources */,
+				4D09E66318DD6B62003670EB /* SwiffPlayhead.m in Sources */,
+				4D09E67118DD6B62003670EB /* SwiffUtils.m in Sources */,
+				4D09E66118DD6B62003670EB /* SwiffPlacedDynamicText.m in Sources */,
+				4D09E66C18DD6B62003670EB /* SwiffSparseArray.m in Sources */,
+				4D09E65E18DD6B62003670EB /* SwiffMovie.m in Sources */,
+				4D09E66818DD6B62003670EB /* SwiffSoundDefinition.m in Sources */,
+				4D09E5C618DD68AC003670EB /* main.m in Sources */,
+				4D09E67218DD6B62003670EB /* SwiffView.m in Sources */,
+				4D09E66218DD6B62003670EB /* SwiffPlacedObject.m in Sources */,
+				4D09E65718DD6B62003670EB /* SwiffFilter.m in Sources */,
+				4D09E66E18DD6B62003670EB /* SwiffStaticTextDefinition.m in Sources */,
+				4D09E67018DD6B62003670EB /* SwiffTypes.m in Sources */,
+				4D09E65918DD6B62003670EB /* SwiffFrame.m in Sources */,
+				4D09E65318DD6B62003670EB /* SwiffBitmapDefinition.m in Sources */,
+				4D09E65618DD6B62003670EB /* SwiffFillStyle.m in Sources */,
+				4D09E66A18DD6B62003670EB /* SwiffSoundPlayer.m in Sources */,
+				4D09E65D18DD6B62003670EB /* SwiffLineStyle.m in Sources */,
+				4D09E66D18DD6B62003670EB /* SwiffSpriteDefinition.m in Sources */,
+				4D09E66F18DD6B62003670EB /* SwiffStaticTextRecord.m in Sources */,
+				4D09E66018DD6B62003670EB /* SwiffPath.m in Sources */,
+				4D09E66618DD6B62003670EB /* SwiffSceneAndFrameLabelData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D09E5D318DD68AD003670EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09E5E518DD68AD003670EB /* SwiffCoreExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D09E5DD18DD68AD003670EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D09E5B518DD68AC003670EB /* SwiffCoreExample */;
+			targetProxy = 4D09E5DC18DD68AD003670EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D09E5C218DD68AC003670EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D09E5C318DD68AC003670EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4D09E5CB18DD68AC003670EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D09E5CC18DD68AC003670EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D09E5E118DD68AD003670EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D09E5E218DD68AD003670EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D09E5E618DD68AD003670EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4D09E5E718DD68AD003670EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D09E5E918DD68AD003670EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwiffCoreExample/SwiffCoreExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/",
+				);
+				INFOPLIST_FILE = "SwiffCoreExample/SwiffCoreExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4D09E5EA18DD68AD003670EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwiffCoreExample/SwiffCoreExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2/",
+				);
+				INFOPLIST_FILE = "SwiffCoreExample/SwiffCoreExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4D09E5EC18DD68AD003670EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiffCoreExample.app/SwiffCoreExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwiffCoreExample/SwiffCoreExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SwiffCoreExampleTests/SwiffCoreExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4D09E5ED18DD68AD003670EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiffCoreExample.app/SwiffCoreExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwiffCoreExample/SwiffCoreExample-Prefix.pch";
+				INFOPLIST_FILE = "SwiffCoreExampleTests/SwiffCoreExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D09E5B118DD68AC003670EB /* Build configuration list for PBXProject "SwiffCoreExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D09E5E618DD68AD003670EB /* Debug */,
+				4D09E5E718DD68AD003670EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D09E5E818DD68AD003670EB /* Build configuration list for PBXNativeTarget "SwiffCoreExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D09E5E918DD68AD003670EB /* Debug */,
+				4D09E5EA18DD68AD003670EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D09E5EB18DD68AD003670EB /* Build configuration list for PBXNativeTarget "SwiffCoreExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D09E5EC18DD68AD003670EB /* Debug */,
+				4D09E5ED18DD68AD003670EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D09E5AE18DD68AC003670EB /* Project object */;
+}

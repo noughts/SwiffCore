@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CAE27D2E-39A2-46FC-AE46-64D0F3BC577C</string>
+	<string>26FA48E7-A88E-4C0D-82BB-4B6999C64393</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SwiffCore</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CAA04D78-A4D7-428B-B4D2-39E25EEAD6A8</key>
-		<string>https://github.com/musictheory/SwiffCore</string>
+		<key>F064C8CE-C1FD-4491-BE8C-851BC6AA95A8</key>
+		<string>https://github.com/noughts/SwiffCore.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SwiffCore.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CAA04D78-A4D7-428B-B4D2-39E25EEAD6A8</key>
+		<key>F064C8CE-C1FD-4491-BE8C-851BC6AA95A8</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/musictheory/SwiffCore</string>
+	<string>https://github.com/noughts/SwiffCore.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CAA04D78-A4D7-428B-B4D2-39E25EEAD6A8</string>
+	<string>F064C8CE-C1FD-4491-BE8C-851BC6AA95A8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CAA04D78-A4D7-428B-B4D2-39E25EEAD6A8</string>
+			<string>F064C8CE-C1FD-4491-BE8C-851BC6AA95A8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SwiffCore</string>
 		</dict>
