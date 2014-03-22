@@ -27,8 +27,8 @@
                                     <action selector="onPlayButtonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lpc-LT-fOX"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drk-t4-1Kq" customClass="SwiffView">
-                                <rect key="frame" x="20" y="200" width="280" height="214"/>
+                            <view alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drk-t4-1Kq" customClass="SwiffView">
+                                <rect key="frame" x="43" y="199" width="236" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.25233848949999999" green="0.637725714" blue="0.90614385190000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
